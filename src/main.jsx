@@ -2,9 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/home/Home";
-import Payment from "./pages/payment/Payment";
-import Order from "./pages/order/Order";
-import CheckoutSuccess from "./component/CheckoutSuccess";
+import PaymentSuccess from "./pages/paymentSuccess/PaymentSuccess";
 
 const router = createBrowserRouter([
   {
@@ -12,17 +10,9 @@ const router = createBrowserRouter([
     element: <Home></Home>,
   },
   {
-    path: "/payment",
-    element: <Payment></Payment>,
+    path: "/payment-success",
+    element:<PaymentSuccess></PaymentSuccess>
   },
-  {
-    path: "/order",
-    element: <Order></Order>,
-  },
-  {
-    path: "/checkout-success",
-    element: <CheckoutSuccess></CheckoutSuccess>,
-  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

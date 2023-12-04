@@ -7,7 +7,7 @@ const Home = () => {
     const price=50;
     const [email,setEmail]=useState('');
     const checkout=()=>{
-        fetch('http://localhost:5000/create-checkout-session',{
+        fetch('https://payment-send-email-server.vercel.app/create-checkout-session',{
             method:'POST',
             headers:{
                 "Content-Type":"application/json"

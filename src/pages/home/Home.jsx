@@ -1,7 +1,5 @@
 import { useState } from 'react';
-import PayButton from '../../component/PayButton';
 import './home.css';
-import { Link } from 'react-router-dom';
 
 const Home = () => {
     const price=50;
